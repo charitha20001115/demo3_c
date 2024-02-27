@@ -12,6 +12,19 @@ annotate service.stud_t with @(
             Label : 'sname',
             Value : sname,
         },
+        {
+            $Type : 'UI.DataFieldForIntentBasedNavigation',
+            SemanticObject : 'overview',
+            Action : 'col',
+            Label : 'Col overview',
+            Mapping : [
+                {
+                    $Type : 'Common.SemanticObjectMappingType',
+                    SemanticObjectProperty : 'overview',
+                    LocalProperty : sid,
+                },
+            ],
+        },
     ]
 );
 annotate service.stud_t with @(
